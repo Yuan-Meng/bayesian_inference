@@ -267,7 +267,7 @@ for number in numbers:
   prior_pred = 0
   # loop over hypotheses
   for H, prior in zip(Hs, priors):
-    # add size-principle likelihood * prior
+    # add likelihood of being accepted * prior 
     if number in H:
       prior_pred += prior
   prior_preds.append(prior_pred)
@@ -275,7 +275,7 @@ for number in numbers:
         </div>
     </div>
 </div>
-<div class="sl-block" data-block-type="image" data-name="image-45c987" data-block-id="43c9900d9b893ab4ecbf0560f296d3ae" style="width: 806.399px; height: 268.692px; left: 38.8005px; top: 201.883px;"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="0"><img style="" data-natural-width="2500" data-natural-height="833" data-src="cogsci131_04_04/409263afc610670cbf5f7575bd97ddfd.png"></div></div></section><section data-id="b08cbba6e477a77e29573640dd74ca4b"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 42px; height: auto;" data-block-id="38c64f99edda52c839ce2f3e14f4284f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<div class="sl-block" data-block-type="image" data-name="image-45c987" data-block-id="43c9900d9b893ab4ecbf0560f296d3ae" style="width: 806.399px; height: 268.692px; left: 38.8005px; top: 201.883px; min-width: 1px; min-height: 1px;"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="0"><img style="" data-natural-width="2500" data-natural-height="833" data-lazy-loaded="" data-src="cogsci131_04_04/409263afc610670cbf5f7575bd97ddfd.png"></div></div></section><section data-id="b08cbba6e477a77e29573640dd74ca4b"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 42px; height: auto;" data-block-id="38c64f99edda52c839ce2f3e14f4284f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
 <h2>why prior predictive checks?</h2>
 </div></div>
 <div class="sl-block" data-block-type="image" data-name="image-b762e5" data-block-id="a8d231e9c317b82e0f63f74b14d768b5" style="width: 400px; height: 246.637px; left: 12px; top: 296.682px; min-width: 1px; min-height: 1px;"><div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="0"><img style="" data-natural-width="892" data-natural-height="550" data-lazy-loaded="" data-src="cogsci131_04_04/b402bac9451e5677fa1080b1c7833cb5.png"></div></div>
@@ -362,7 +362,7 @@ for number in numbers:
   post_pred = 0
   # loop over hypotheses
   for H, posterior in zip(Hs, posteriors):
-    # add size-principle likelihood * posterior
+    # add likelihood of being accepted * posterior
     if number in H:
       post_pred +=  post
   post_preds.append(post_pred)
@@ -370,7 +370,7 @@ for number in numbers:
         </div>
     </div>
 </div>
-<div class="sl-block" data-block-type="image" data-name="image-174c10" data-block-id="ca23d344d331797408943f9f638d7a41" style="width: 806.399px; height: 268.692px; left: 76.8005px; top: 215.654px;"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="0"><img style="" data-natural-width="2500" data-natural-height="833" data-src="cogsci131_04_04/685c10e607b26f9326ae69a11d159ab2.png"></div></div></section><section data-id="5df47d1922928d428a676c975c6e5ee0"><div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 105px; height: auto;" data-block-id="cf81a17d74e2a01e0b16a1e972779128"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<div class="sl-block" data-block-type="image" data-name="image-174c10" data-block-id="ca23d344d331797408943f9f638d7a41" style="width: 806.399px; height: 268.692px; left: 76.8005px; top: 215.654px; min-width: 1px; min-height: 1px;"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="0"><img style="" data-natural-width="2500" data-natural-height="833" data-lazy-loaded="" data-src="cogsci131_04_04/685c10e607b26f9326ae69a11d159ab2.png"></div></div></section><section data-id="5df47d1922928d428a676c975c6e5ee0"><div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 105px; height: auto;" data-block-id="cf81a17d74e2a01e0b16a1e972779128"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
 <h2>hw8 prompts</h2>
 </div></div>
 <div class="sl-block" data-block-type="iframe" data-name="iframe-7ee583" data-block-id="937dad74c4fba23fd0a7b318f0aa155f" style="width: 910.171px; height: 499px; left: 20.4145px; top: 186.5px;"><div class="sl-block-content" style="z-index: 11;"><iframe allowfullscreen="" allow="fullscreen" data-src="https://drive.google.com/file/d/1jkZSt5jQW47x7QIO6539thivQccBAgid/preview" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock allow-presentation"></iframe></div></div>
@@ -429,7 +429,7 @@ for iter in range(n_iters):
 		</div>
 
 		<script>
-			var SLConfig = {"deck": {"id":2373125,"slug":"cogsci131_04_04","title":"cogsci131_04_04","description":"","width":960,"height":700,"margin":0.01,"visibility":"all","published_at":"2022-04-05T00:12:24.092Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/191e4ec7797e559186cb3853a33031a9/thumb.jpg?1649117556","view_count":0,"user":{"id":1304426,"username":"yuanmeng-1","name":"Yuan Meng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a-/AOh14GiwxvGSaiggZl-tNwJWFLuEdLMQS-zeQzdmldJU7w","account_type":"pro","team_id":null,"settings":{"id":5181623,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"sketch","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":14,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1649288991073,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"notes":{}}};
+			var SLConfig = {"deck": {"id":2373125,"slug":"cogsci131_04_04","title":"cogsci131_04_04","description":"","width":960,"height":700,"margin":0.01,"visibility":"all","published_at":"2022-04-05T00:12:24.092Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/191e4ec7797e559186cb3853a33031a9/thumb.jpg?1649117556","view_count":0,"user":{"id":1304426,"username":"yuanmeng-1","name":"Yuan Meng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a-/AOh14GiwxvGSaiggZl-tNwJWFLuEdLMQS-zeQzdmldJU7w","account_type":"pro","team_id":null,"settings":{"id":5181623,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"sketch","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":14,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1649305529147,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"notes":{}}};
 
 
 			// Use local fonts
